@@ -76,6 +76,10 @@ GEM
     ffi (1.9.25)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    handlebars_assets (0.23.2)
+      execjs (~> 2.0)
+      sprockets (>= 2.0.0)
+      tilt (>= 1.2)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
@@ -220,6 +224,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.1.0)
   faker
+  handlebars_assets
   jbuilder (~> 2.0)
   jquery-rails
   poltergeist (~> 1.14.0)
