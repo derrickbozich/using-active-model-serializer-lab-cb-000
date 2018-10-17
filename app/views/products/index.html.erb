@@ -18,7 +18,8 @@ $(function() {
       let descriptionText = "<p>" + json.description + "</p><p>" + inventoryText + "</p>";
 
       let src = $('#orders-template')
-      
+      let template = Handlebars.compile(src)
+      let ordersList = template({test: 'template test'})
       $("#product-" + id).html(descriptionText);
     });
   });
@@ -28,7 +29,7 @@ $(function() {
 <script id='orders-template' type="text/x-handlebars-template">
   <ul>
 
-      <li>template test</li>
+      <li>{{test}}</li>
 
   </ul>
 </script>
