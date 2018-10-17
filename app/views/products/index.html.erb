@@ -19,6 +19,8 @@ $(function() {
 
       let src = $('#orders-template').html();
       debugger
+      let orders = json.orders
+
       let template = Handlebars.compile(src)
       let ordersList = template({test: 'template test'})
       debugger
