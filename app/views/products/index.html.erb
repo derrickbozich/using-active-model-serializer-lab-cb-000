@@ -18,7 +18,7 @@ $(function() {
       let descriptionText = "<p>" + json.description + "</p><p>" + inventoryText + "</p>";
 
       let src = $('#orders-template').html();
-      debugger
+
       let orders = json.orders
 
       let template = Handlebars.compile(src)
@@ -32,10 +32,10 @@ $(function() {
 
 <script id='orders-template' type="text/x-handlebars-template">
   <ul>
-
+    {{#each this}}
       <li>Id: {{id}}</li>
       <li>Created at: {{created_at}}</li>
 
-
+    {{/each}}
   </ul>
 </script>
