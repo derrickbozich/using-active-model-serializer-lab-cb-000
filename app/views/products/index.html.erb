@@ -17,7 +17,7 @@ $(function() {
       }
       let descriptionText = "<p>" + json.description + "</p><p>" + inventoryText + "</p>";
 
-      let src = $('#orders-template').innerHTML
+      let src = $('#orders-template').html();
       debugger
       let template = Handlebars.compile(src)
       let ordersList = template({test: 'template test'})
