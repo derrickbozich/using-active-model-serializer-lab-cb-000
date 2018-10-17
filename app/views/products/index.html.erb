@@ -20,6 +20,7 @@ $(function() {
       let src = $('#orders-template')
       let template = Handlebars.compile(src)
       let ordersList = template({test: 'template test'})
+      debugger
       $("#product-" + id).html(descriptionText);
     });
   });
