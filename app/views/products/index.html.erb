@@ -16,6 +16,9 @@ $(function() {
         inventoryText = "<strong>Sold Out</strong>";
       }
       let descriptionText = "<p>" + json.description + "</p><p>" + inventoryText + "</p>";
+
+      let src = $('#orders-template')
+      
       $("#product-" + id).html(descriptionText);
     });
   });
@@ -26,6 +29,6 @@ $(function() {
   <ul>
 
       <li>template test</li>
-  
+
   </ul>
 </script>
