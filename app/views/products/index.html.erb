@@ -23,8 +23,9 @@ $(function() {
 
       let template = Handlebars.compile(src)
       let ordersList = template(orders)
+      
       debugger
-      $("#product-" + id).html(descriptionText);
+      $("#product-" + id).html(descriptionText + ordersList);
     });
   });
 });
@@ -35,7 +36,6 @@ $(function() {
     {{#each this}}
       <li>Id: {{id}}</li>
       <li>Created at: {{created_at}}</li>
-
     {{/each}}
   </ul>
 </script>
