@@ -32,6 +32,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'active_model_serializers'
 
+gem 'handlebars_assets'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
