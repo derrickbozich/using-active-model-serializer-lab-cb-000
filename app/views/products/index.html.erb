@@ -23,8 +23,8 @@ $(function() {
 
       let template = Handlebars.compile(src)
       let ordersList = template(orders)
+
       
-      debugger
       $("#product-" + id).html(descriptionText + ordersList);
     });
   });
