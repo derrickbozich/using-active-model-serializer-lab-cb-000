@@ -22,7 +22,7 @@ $(function() {
       let orders = json.orders
 
       let template = Handlebars.compile(src)
-      let ordersList = template({test: 'template test'})
+      let ordersList = template(orders)
       debugger
       $("#product-" + id).html(descriptionText);
     });
